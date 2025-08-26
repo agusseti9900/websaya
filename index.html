@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Meeting Panitia Sepak Bola</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .meeting-info {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2a5298;
+            color: white;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .info-item {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .agenda-container {
+            padding: 30px;
+        }
+        
+        .agenda-section {
+            margin-bottom: 30px;
+        }
+        
+        .agenda-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2a5298;
+        }
+        
+        .agenda-icon {
+            background-color: #2a5298;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .agenda-title {
+            font-size: 1.8rem;
+            color: #2a5298;
+        }
+        
+        .agenda-items {
+            list-style-type: none;
+        }
+        
+        .agenda-items li {
+            background: #f8f9fa;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 4px solid #2a5298;
+            border-radius: 0 5px 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .agenda-items li:before {
+            content: "•";
+            color: #2a5298;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .priority-high {
+            border-left-color: #e74c3c;
+        }
+        
+        .priority-high:before {
+            color: #e74c3c;
+        }
+        
+        .priority-medium {
+            border-left-color: #f39c12;
+        }
+        
+        .priority-medium:before {
+            color: #f39c12;
+        }
+        
+        .notes-section {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .notes-title {
+            color: #2a5298;
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e3c72;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .meeting-info {
+                flex-direction: column;
+            }
+            
+            .agenda-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .agenda-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Technical Meeting Panitia Sepak Bola</h1>
+            <p class="subtitle">Kompetisi Sepak Bola Antar RT - Edisi 2025</p>
+        </header>
+        
+        <div class="meeting-info">
+            <div class="info-item">
+                <h3>Hari/Tanggal</h3>
+                <p>Sabtu, 28 Oktober 2025</p>
+            </div>
+            <div class="info-item">
+                <h3>Waktu</h3>
+                <p>13.00 - Selesai</p>
+            </div>
+            <div class="info-item">
+                <h3>Tempat</h3>
+                <p>Majelis Ta'lim Darul Muttaqin</p>
+            </div>
+        </div>
+        
+        <div class="agenda-container">
+            <div class="agenda-section">
+                <div class="agenda-header">
+                    <div class="agenda-icon">1</div>
+                    <h2 class="agenda-title">Peraturan Teknis Pertandingan</h2>
+                </div>
+                <ul class="agenda-items">
+                    <li class="priority-high">Sistem kompetisi (liga vs gugur) dan jumlah peserta</li>
+                    <li class="priority-high">Durasi pertandingan (2 x 25 menit atau 2 x 30 menit)</li>
+                    <li>Jumlah pemain (8 vs 8 atau 11 vs 11)</li>
+                    <li>Aturan offside (diberlakukan atau tidak)</li>
+                    <li>Batasan jumlah pergantian pemain</li>
+                    <li class="priority-medium">Protes pertandingan dan mekanisme penyelesaian</li>
+                </ul>
+            </div>
+            
+            <div class="agenda-section">
+                <div class="agenda-header">
+                    <div class="agenda-icon">2</div>
+                    <h2 class="agenda-title">Teknologi dan Administrasi</h2>
+                </div>
+                <ul class="agenda-items">
+                    <li class="priority-high">Sistem input data dan update klasemen real-time</li>
+                    <li>Aplikasi atau tools yang akan digunakan</li>
+                    <li>Pembagian tugas admin input data</li>
+                    <li>Mekanisme verifikasi data sebelum dipublikasikan</li>
+                    <li class="priority-medium">Media publikasi (website, grup WhatsApp, papan pengumuman)</li>
+                </ul>
+            </div>
+            
+            <div class="agenda-section">
+                <div class="agenda-header">
+                    <div class="agenda-icon">3</div>
+                    <h2 class="agenda-title">Sarana dan Prasarana</h2>
+                </div>
+                <ul class="agenda-items">
+                    <li class="priority-high">Lapangan yang akan digunakan</li>
+                    <li>Ketersediaan gawang, bola, dan peralatan lain</li>
+                    <li>Papan skor dan stopwatch</li>
+                    <li>Ketersediaan air minum untuk pemain dan official</li>
+                    <li class="priority-medium">P3K dan penanganan cedera</li>
+                </ul>
+            </div>
+            
+            <div class="agenda-section">
+                <div class="agenda-header">
+                    <div class="agenda-icon">4</div>
+                    <h2 class="agenda-title">Wasit dan Official</h2>
+                </div>
+                <ul class="agenda-items">
+                    <li class="priority-high">Sumber wasit (dari luar atau internal warga)</li>
+                    <li>Honor wasit dan official</li>
+                    <li>Briefing wasit mengenai peraturan yang diberlakukan</li>
+                    <li class="priority-medium">Seragam wasit dan official</li>
+                </ul>
+            </div>
+            
+            <div class="agenda-section">
+                <div class="agenda-header">
+                    <div class="agenda-icon">5</div>
+                    <h2 class="agenda-title">Pembiayaan dan Sponsor</h2>
+                </div>
+                <ul class="agenda-items">
+                    <li class="priority-high">Sumber dana kompetisi</li>
+                    <li>Iuran peserta (jika ada)</li>
+                    <li>Pengelolaan kas dan pertanggungjawaban keuangan</li>
+                    <li>Pencarian sponsor dan bentuk kerjasama</li>
+                    <li class="priority-medium">Hadiah untuk juara dan individu</li>
+                </ul>
+            </div>
+            
+            <div class="notes-section">
+                <h3 class="notes-title">Catatan Penting:</h3>
+                <p>Technical meeting ini wajib dihadiri oleh minimal 2 perwakilan dari setiap tim peserta. Keputusan yang diambil dalam technical meeting akan mengikat semua peserta dan tidak dapat diganggu gugat. Panitia berhak membuat keputusan final untuk hal-hal yang tidak diatur dalam peraturan ini.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Panitia Kompetisi Sepak Bola Antar RT | Email: panitia.sepakbola@example.com</p>
+        </footer>
+    </div>
+</body>
+</html>
